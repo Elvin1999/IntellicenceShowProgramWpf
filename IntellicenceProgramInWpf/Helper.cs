@@ -2,10 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace IntellicenceProgramInWpf
 {
     public class Helper
@@ -13,7 +9,6 @@ namespace IntellicenceProgramInWpf
         public List<Data> Datas { get; set; }
         public void SeriailizeEndatasToJson()
         {
-
             using (StreamWriter sw = new StreamWriter("words.json"))
             {
                 var item = JsonConvert.SerializeObject(Datas);
@@ -30,8 +25,9 @@ namespace IntellicenceProgramInWpf
             catch (Exception)
             {
             }
-
             return Datas;
         }
     }
 }
+
+

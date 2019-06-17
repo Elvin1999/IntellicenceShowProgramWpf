@@ -78,7 +78,7 @@ namespace IntellicenceProgramInWpf
         {
             word = Search.Text;
             ThreadPool.QueueUserWorkItem(new WaitCallback(SearchWord));
-            SearchWord(Search.Text);
+          
         }
       
      

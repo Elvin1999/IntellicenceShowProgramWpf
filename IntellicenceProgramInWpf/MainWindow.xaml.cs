@@ -70,7 +70,7 @@ namespace IntellicenceProgramInWpf
                 });
             }
             catch (Exception ex)
-            {
+            { 
                 MessageBox.Show(ex.Message);
             }
         }
